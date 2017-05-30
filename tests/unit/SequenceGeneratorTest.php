@@ -2,8 +2,8 @@
 
 namespace SequenceGeneratorTest\Unit;
 
-
 use PHPUnit\Framework\TestCase;
+use SequenceGenerator\SequenceGenerator;
 
 class SequenceGeneratorTest extends TestCase
 {
@@ -12,8 +12,12 @@ class SequenceGeneratorTest extends TestCase
      */
     public function itShouldGenerateASequenceFromGivenNumbers()
     {
-        $expected = 123456789;
-        $actual = 123456789;
+        $expected = '123456789';
+
+        $sequenceGenerator = new SequenceGenerator(9);
+
+        $actual = $sequenceGenerator->generateSequence();
+
         $this->assertEquals($expected, $actual);
     }
 }
