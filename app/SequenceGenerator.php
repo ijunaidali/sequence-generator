@@ -4,18 +4,15 @@ namespace SequenceGenerator;
 
 class SequenceGenerator implements SequenceGeneratorInterface
 {
-    private $x;
-
-    public function __construct($x)
+    public function __construct()
     {
-        $this->x = $x;
     }
 
-    public function generateSequence()
+    public function generateSequence($limit)
     {
         $sequence = null;
 
-        for ($i = 1; $i <= $this->x; $i++) {
+        for ($i = 1; $i <= $limit; $i++) {
             if ($i % 3 == 0) {
                 $sequence .= 'Fizz';
             } else if ($i % 5 == 0) {

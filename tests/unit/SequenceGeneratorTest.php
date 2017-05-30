@@ -14,9 +14,9 @@ class SequenceGeneratorTest extends TestCase
     {
         $expected = '12Fizz4BuzzFizz78Fizz';
 
-        $sequenceGenerator = new SequenceGenerator(9);
+        $sequenceGenerator = new SequenceGenerator();
 
-        $actual = $sequenceGenerator->generateSequence();
+        $actual = $sequenceGenerator->generateSequence(9);
 
         $this->assertEquals($expected, $actual);
     }

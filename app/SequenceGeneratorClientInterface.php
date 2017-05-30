@@ -2,11 +2,12 @@
 
 namespace SequenceGenerator;
 
-interface SequenceGeneratorInterface
+
+interface SequenceGeneratorClientInterface
 {
     /**
      * @param $limit
      * @return string
      */
-    public function generateSequence($limit);
+    public function handleRequest($limit);
 }
