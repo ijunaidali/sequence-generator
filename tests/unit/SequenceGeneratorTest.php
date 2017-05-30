@@ -5,6 +5,10 @@ namespace SequenceGeneratorTest\Unit;
 use PHPUnit\Framework\TestCase;
 use SequenceGenerator\SequenceGenerator;
 
+/**
+ * Class SequenceGeneratorTest
+ * @package SequenceGeneratorTest\Unit
+ */
 class SequenceGeneratorTest extends TestCase
 {
     /**

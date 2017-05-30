@@ -2,6 +2,10 @@
 
 namespace SequenceGenerator;
 
+/**
+ * Interface SequenceGeneratorInterface
+ * @package SequenceGenerator
+ */
 interface SequenceGeneratorInterface
 {
     /**

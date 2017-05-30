@@ -6,10 +6,12 @@ use PHPUnit\Framework\TestCase;
 use SequenceGenerator\SequenceGenerator;
 use SequenceGenerator\SequenceGeneratorClient;
 
+/**
+ * Class ClientTest
+ * @package SequenceGeneratorTest\Unit
+ */
 class ClientTest extends TestCase
 {
-
-
     /**
      * @test
      */
@@ -24,6 +26,5 @@ class ClientTest extends TestCase
         $actual = $sequenceGeneratorClient->handleRequest(9);
 
         $this->assertEquals($expected, $actual);
-
     }
 }

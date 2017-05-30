@@ -2,11 +2,21 @@
 
 namespace SequenceGenerator;
 
-
+/**
+ * Class SequenceGeneratorClient
+ * @package SequenceGenerator
+ */
 class SequenceGeneratorClient implements SequenceGeneratorClientInterface
 {
+    /**
+     * @var SequenceGeneratorInterface
+     */
     private $sequenceGenerator;
 
+    /**
+     * SequenceGeneratorClient constructor.
+     * @param SequenceGeneratorInterface $sequenceGenerator
+     */
     public function __construct(
         SequenceGeneratorInterface $sequenceGenerator
     )

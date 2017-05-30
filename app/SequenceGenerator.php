@@ -2,12 +2,23 @@
 
 namespace SequenceGenerator;
 
+/**
+ * Class SequenceGenerator
+ * @package SequenceGenerator
+ */
 class SequenceGenerator implements SequenceGeneratorInterface
 {
+    /**
+     * SequenceGenerator constructor.
+     */
     public function __construct()
     {
     }
 
+    /**
+     * @param $limit
+     * @return null|string
+     */
     public function generateSequence($limit)
     {
         $sequence = null;
