@@ -12,7 +12,7 @@ class SequenceGeneratorTest extends TestCase
      */
     public function itShouldGenerateASequenceFromGivenNumbers()
     {
-        $expected = '123456789';
+        $expected = '12Fizz4BuzzFizz78Fizz';
 
         $sequenceGenerator = new SequenceGenerator(9);
 
