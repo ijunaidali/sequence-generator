@@ -1,0 +1,23 @@
+{
+    "name": "ijunaidali/sequence-generator",
+    "description": "Should be able to generate a sequence of numbers from 1 to X (step equals 1) and return to the client",
+    "authors": [
+        {
+            "name": "Junaid Ali",
+            "email": "junaidali@email.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "5.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "SequenceGenerator\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SequenceGeneratorTest\\": "tests/"
+        }
+    }
+}
